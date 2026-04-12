@@ -77,12 +77,11 @@
   }
 }
 
-.tabbrowser-tab .tab-content {
+/* Tab background progress fill */
+  .tabbrowser-tab .tab-content {
     position: relative !important;
-    overflow: hidden !important;
   }
 
-  /* Completion state — full width, fades out */
   .tabbrowser-tab .tab-content::before {
     content: "" !important;
     position: absolute !important;
@@ -94,33 +93,36 @@
     background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05)) !important;
     border-radius: 4px !important;
     z-index: 0 !important;
+    pointer-events: none !important;
     transition: width 0.2s ease-out, opacity 0.4s ease 0.2s !important;
   }
 
-  /* Stage 1 — just started */
   .tabbrowser-tab[busy] .tab-content::before {
     opacity: 1 !important;
     width: 15% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
   }
 
-  /* Stage 2 */
   .tabbrowser-tab[busy][pendingicon] .tab-content::before {
     opacity: 1 !important;
     width: 45% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
   }
 
-  /* Stage 3 */
   .tabbrowser-tab[busy][pendingicon][progress] .tab-content::before {
     opacity: 1 !important;
     width: 85% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
   }
 
-  /* Stage 4 */
   .tabbrowser-tab[busy][progress] .tab-content::before {
     opacity: 1 !important;
     width: 95% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
+  }
+
+  /* Keep close button above the fill */
+  .tabbrowser-tab .tab-close-button {
+    position: relative !important;
+    z-index: 1 !important;
   }
