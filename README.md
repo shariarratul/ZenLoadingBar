@@ -22,10 +22,10 @@ The top bar uses `::before` on `.browserSidebarContainer` and reads CSS variable
 ## Screenshots
 
 ### Top Loading Bar
-![Top Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Tab%20Loading%20Bar.png)
+![Top Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Top%20Loading%20Bar.png)
 
-### Zen Loading Bar Example
-![Zen Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Zen%20Progress%20Bar.png)
+### Tab Progress Bar Example
+![Zen Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Tab%20Progress%20Bar.png)
 
-### Zen Loading Bar Demo
+### Zen Loading Bar Mod Demo
 https://github.com/user-attachments/assets/b4a21bce-efa2-4c89-9c44-1645ac28ea3b
