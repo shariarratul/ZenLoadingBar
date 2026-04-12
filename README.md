@@ -1,15 +1,15 @@
 # Zen Loading Bar
 
-Adds a mobile-style loading indicator to Zen Browser — a purple gradient bar at the top of the screen plus a subtle white fill that grows inside each tab as pages load.
+Adds a mobile-style loading indicator to Zen Browser - a purple gradient bar at the top of the screen plus a subtle white fill that grows inside each tab as pages load.
 
 ## Features
 
-- **Top loading bar** — 6px gradient bar (purple → pink) sweeps across the top of the viewport during page load
-- **Tab progress fill** — semi-transparent white fill grows behind the tab label for all tabs including background tabs
+- **Top loading bar** - 6px gradient bar (purple → pink) sweeps across the top of the viewport during page load
+- **Tab progress fill** - semi-transparent white fill grows behind the tab label for all tabs including background tabs
 - **4 real progress stages** using Zen's native tab attributes (`busy`, `pendingicon`, `progress`)
-- **Smooth completion** — on page load finish, bar fills to 100% then fades out
-- **Compact mode support** — works correctly when the toolbar is hidden
-- **Glance mode aware** — adjusts correctly for Zen Glance overlay
+- **Smooth completion** - on page load finish, bar fills to 100% then fades out
+- **Compact mode support** - works correctly when the toolbar is hidden
+- **Glance mode aware** - adjusts correctly for Zen Glance overlay
 
 ## Compatibility
 
@@ -22,10 +22,10 @@ The top bar uses `::before` on `.browserSidebarContainer` and reads CSS variable
 ## Screenshots
 
 ### Top Loading Bar
-![Top Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Tab%20Progress%20Bar.png)
+![Top Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Tab%20Loading%20Bar.png)
 
 ### Zen Loading Bar Example
-![Zen Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Zen%20Loading%20Bar.png)
+![Zen Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Zen%20Progress%20Bar.png)
 
-### Zen Loading Bar Video
-[![Zen Loading Bar](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Zen%20Loading%20Bar.png)](https://github.com/shariarratul/ZenLoadingBar/raw/main/assets/Zen%20Loading%20Bar.mp4)
+### Zen Loading Bar Demo
+https://github.com/user-attachments/assets/b4a21bce-efa2-4c89-9c44-1645ac28ea3b
