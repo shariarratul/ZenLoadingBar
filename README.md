@@ -5,7 +5,7 @@ Adds a mobile-style loading indicator to Zen Browser - a purple gradient bar at 
 ### Zen Loading Bar Mod Demo
 https://github.com/user-attachments/assets/b4a21bce-efa2-4c89-9c44-1645ac28ea3b
 
-##Manual Install
+## Manual Install
 # How to Create userChrome.css in Zen Browser
 
 ## Step 1 — Enable Custom Stylesheets
