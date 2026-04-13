@@ -1,0 +1,11 @@
+[
+  {
+    "id": "zen-loading-bar-shariarratul",
+    "name": "Zen Loading Bar",
+    "description": "Mobile-style top loading bar + tab background progress fill for Zen Browser.",
+    "homepage": "https://github.com/shariarratul/ZenLoadingBar",
+    "style": "https://raw.githubusercontent.com/shariarratul/ZenLoadingBar/main/chrome.css",
+    "readme": "https://raw.githubusercontent.com/shariarratul/ZenLoadingBar/main/README.md",
+    "image": "https://raw.githubusercontent.com/shariarratul/ZenLoadingBar/main/preview.png"
+  }
+]
