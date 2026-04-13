@@ -6,9 +6,8 @@ Adds a mobile-style loading indicator to Zen Browser - a purple gradient bar at 
 https://github.com/user-attachments/assets/b4a21bce-efa2-4c89-9c44-1645ac28ea3b
 
 ## Manual Install
-# How to Create userChrome.css in Zen Browser
 
-## Step 1 — Enable Custom Stylesheets
+### Step 1 — Enable Custom Stylesheets
 
 Go to `about:config` in the address bar and press Enter.
 
@@ -20,7 +19,7 @@ Double-click the entry to set it to `true`.
 
 ---
 
-## Step 2 — Find Your Profile Folder
+### Step 2 — Find Your Profile Folder
 
 Press `Win + R` and paste:
 ```
@@ -30,7 +29,7 @@ Open the folder that ends with `.Default (release)`.
 
 ---
 
-## Step 3 — Create the chrome Folder
+### Step 3 — Create the chrome Folder
 
 Inside your profile folder, create a new folder named exactly:
 ```
@@ -39,7 +38,7 @@ chrome
 
 ---
 
-## Step 4 — Create userChrome.css if it doesn't exists
+### Step 4 — Create userChrome.css if it doesn't exists
 
 Inside the `chrome` folder, create a new file named exactly:
 ```
@@ -48,13 +47,13 @@ userChrome.css
 
 ---
 
-## Step 5 — Copy All the CSS from chrome.css in this repo
+### Step 5 — Copy All the CSS from chrome.css in this repo
 
 Copy all the CSS from chrome.css in this repo and paste it inside the userChrome.css file.
 
 ---
 
-## Step 6 — Restart Zen Browser
+### Step 6 — Restart Zen Browser
 
 Fully restart Zen Browser - close it completely from the taskbar, not just the window.
 
