@@ -1,4 +1,20 @@
 @-moz-document url-prefix("chrome:") {
+  :root {
+    /* Progress bar gradient colors */
+    --progress-from:  #F54927;
+    --progress-via-1: #F54927;
+    --progress-via-2: #69B8F5;
+    --progress-to:    #69B8F5;
+
+    /* Muted tab gradient colors */
+    --muted-from: #dc2626;
+    --muted-to:   #f97316;
+
+    /* Tab background fill colors */
+    --tab-fill-from: rgba(255, 255, 255, 0.15);
+    --tab-fill-to:   rgba(255, 255, 255, 0.05);
+  }
+
   .browserSidebarContainer.deck-selected::before {
     content: "" !important;
     position: absolute !important;
@@ -23,7 +39,7 @@
   .browserSidebarContainer.deck-selected:has([zen-glance-selected])::before,
   .browserSidebarContainer.deck-selected.zen-glance-overlay::before {
     max-width: calc(85%) !important;
-    left: calc(15%/2) !important;
+    left: calc(15% / 2) !important;
     border-radius: 4px !important;
   }
 
@@ -34,23 +50,23 @@
 
   :root {
     &:has(.tabbrowser-tab[selected][busy]) {
-      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-colour: linear-gradient(90deg, var(--progress-from), var(--progress-via-1), var(--progress-via-2), var(--progress-to));
       --bar-pcent: 15%;
     }
     &:has(.tabbrowser-tab[selected][busy][pendingicon]) {
-      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-colour: linear-gradient(90deg, var(--progress-from), var(--progress-via-1), var(--progress-via-2), var(--progress-to));
       --bar-pcent: 45%;
     }
     &:has(.tabbrowser-tab[selected][busy][pendingicon][progress]) {
-      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-colour: linear-gradient(90deg, var(--progress-from), var(--progress-via-1), var(--progress-via-2), var(--progress-to));
       --bar-pcent: 85%;
     }
     &:has(.tabbrowser-tab[selected][busy][progress]) {
-      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-colour: linear-gradient(90deg, var(--progress-from), var(--progress-via-1), var(--progress-via-2), var(--progress-to));
       --bar-pcent: 95%;
     }
     &:has(.tabbrowser-tab[selected][muted]:not([busy])) {
-      --bar-colour: linear-gradient(90deg, #dc2626, #f97316);
+      --bar-colour: linear-gradient(90deg, var(--muted-from), var(--muted-to));
       --bar-pcent: 100%;
       .browserSidebarContainer.deck-selected::before {
         border-radius: 0;
@@ -58,12 +74,10 @@
     }
   }
 
-
-/* Tab background progress fill */
+  /* Tab background progress fill */
   .tabbrowser-tab .tab-content {
     position: relative !important;
   }
-
   .tabbrowser-tab .tab-content::before {
     content: "" !important;
     position: absolute !important;
@@ -72,31 +86,27 @@
     height: 100% !important;
     width: 100% !important;
     opacity: 0 !important;
-    background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05)) !important;
+    background: linear-gradient(90deg, var(--tab-fill-from), var(--tab-fill-to)) !important;
     border-radius: 4px !important;
     z-index: 0 !important;
     pointer-events: none !important;
     transition: width 0.2s ease-out, opacity 0.4s ease 0.2s !important;
   }
-
   .tabbrowser-tab[busy] .tab-content::before {
     opacity: 1 !important;
     width: 15% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
   }
-
   .tabbrowser-tab[busy][pendingicon] .tab-content::before {
     opacity: 1 !important;
     width: 45% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
   }
-
   .tabbrowser-tab[busy][pendingicon][progress] .tab-content::before {
     opacity: 1 !important;
     width: 85% !important;
     transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
   }
-
   .tabbrowser-tab[busy][progress] .tab-content::before {
     opacity: 1 !important;
     width: 95% !important;
@@ -108,3 +118,4 @@
     position: relative !important;
     z-index: 1 !important;
   }
+}
