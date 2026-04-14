@@ -1,10 +1,10 @@
 @-moz-document url-prefix("chrome:") {
   :root {
     /* Progress bar gradient colors */
-    --progress-from:  #F54927;
-    --progress-via-1: #F54927;
-    --progress-via-2: #69B8F5;
-    --progress-to:    #69B8F5;
+    --progress-from:  #4c1d95;
+    --progress-via-1: #7c3aed;
+    --progress-via-2: #a855f7;
+    --progress-to:    #ec4899;
 
     /* Muted tab gradient colors */
     --muted-from: #dc2626;
